@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">mobileCwTwo</string>
+    <string name="know_your_movies">Know your movies</string>
+    <string name="add_movies_to_db">Add movies to db</string>
+    <string name="search_for_movie">Search for movie</string>
+    <string name="search_for_actor">Search for actor</string>
+    <string name="retrieve_movie">Retrieve Movie</string>
+    <string name="enter_a_movie_name">Enter a movie name</string>
+    <string name="save_movie_to_database">Save movie to Database</string>
+    <string name="search">Search</string>
+    <string name="enter_actor_name">enter actor name</string>
+    <string name="get_all">Get all</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/mainHeadingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/know_your_movies"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iconImage"
+        android:layout_width="145dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/movie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainHeadingText"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/buttonLiner"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iconImage">
+
+        <android.widget.Button
+            android:layout_margin="5dp"
+            android:id="@+id/addMovieDbBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_final"
+            android:text="@string/add_movies_to_db" />
+
+        <android.widget.Button
+            android:layout_margin="5dp"
+            android:layout_marginBottom="0dp"
+            android:id="@+id/SearchMovieBtn"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_final"
+            android:layout_weight="1"
+            android:text="@string/search_for_movie" />
+
+        <android.widget.Button
+            android:layout_margin="5dp"
+            android:id="@+id/SearchActorBtn"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_final"
+            android:text="@string/search_for_actor" />
+
+        <android.widget.Button
+            android:layout_margin="5dp"
+            android:id="@+id/SearchMovieAll"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_final"
+            android:text="@string/get_all" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
